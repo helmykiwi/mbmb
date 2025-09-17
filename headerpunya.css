@@ -1,0 +1,52 @@
+#body{
+  background: #004085;
+}
+header {
+  color: #004085;
+  background-color: #004085; 
+  padding: 15px 0;       
+  width: 100%;           
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;       
+}
+
+header .branding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .branding img {
+  width: 60px;
+  height: auto;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffdd57; 
+}
+
+.container{
+  color: #004085;
+}
