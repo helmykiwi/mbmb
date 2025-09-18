@@ -50,3 +50,49 @@ nav a:hover {
 .container{
   color: #004085;
 }
+
+/* Navigation list reset */
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Navigation links */
+.navigation ul li {
+  position: relative;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Dropdown items */
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
