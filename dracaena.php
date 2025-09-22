@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zon Chrysanthemum - Portal EKSA MBMB</title>
+    <title>Zon Dracaena - Portal EKSA MBMB</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Chrysanthemum Page Specific Styles */
-        .chrysanthemum-hero {
+        /* Dracaena Page Specific Styles */
+        .dracaena-hero {
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('image/chrysanthemum.jpg');
+                        url('image/dracaena.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -33,23 +33,23 @@
             75% { background-position: center center; }
         }
 
-        .chrysanthemum-hero h1 {
+        .dracaena-hero h1 {
             font-size: 3.5rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-            color: #ff8c00;
+            color: #2d5016;
             animation: titleSlideIn 1.5s ease-out, titleGlow 3s ease-in-out infinite alternate;
             transform: translateX(-100px);
             opacity: 0;
             animation-fill-mode: forwards;
         }
 
-        .chrysanthemum-hero p {
+        .dracaena-hero p {
             font-size: 1.3rem;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
             margin: 0;
-            color: #ff8c00;
+            color: #2d5016;
             animation: subtitleSlideIn 1.8s ease-out 0.5s, subtitleFloat 4s ease-in-out infinite alternate;
             transform: translateX(-100px);
             opacity: 0;
@@ -64,8 +64,8 @@
         }
 
         @keyframes titleGlow {
-            from { text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 0 0 10px rgba(255,140,0,0.3); }
-            to { text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 0 0 20px rgba(255,140,0,0.6); }
+            from { text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 0 0 10px rgba(45,80,22,0.3); }
+            to { text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 0 0 20px rgba(45,80,22,0.6); }
         }
 
         @keyframes subtitleSlideIn {
@@ -124,10 +124,10 @@
         }
 
         .secondary-nav a:hover {
-            background: #ff8c00;
+            background: #2d5016;
             color: white;
             transform: translateY(-2px) scale(1.05);
-            box-shadow: 0 5px 15px rgba(255,140,0,0.4);
+            box-shadow: 0 5px 15px rgba(45,80,22,0.4);
         }
 
         .main-layout {
@@ -144,6 +144,105 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             overflow: hidden;
+            padding: 0;
+        }
+
+        .news-article {
+            border-bottom: 1px solid #e9ecef;
+            padding: 2rem;
+        }
+
+        .news-article:last-child {
+            border-bottom: none;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .article-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .share-icon {
+            color: #6c757d;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .share-icon:hover {
+            color: #2d5016;
+        }
+
+        .article-image {
+            margin: 1.5rem 0;
+        }
+
+        .article-text {
+            margin: 1.5rem 0;
+        }
+
+        .article-text p {
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+
+        .article-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .comment-link {
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .comment-link:hover {
+            color: #2d5016;
+        }
+
+        .read-more {
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #2d5016;
+        }
+
+        .load-more {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .more-posts {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border: 2px solid #2d5016;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .more-posts:hover {
+            background: #2d5016;
+            color: white;
         }
 
         .article-header {
@@ -213,7 +312,7 @@
         }
 
         .social-share a:hover {
-            background: #ff8c00;
+            background: #2d5016;
             color: white;
         }
 
@@ -237,7 +336,7 @@
         }
 
         .widget-title {
-            background: linear-gradient(135deg, #ff8c00, #ffa500);
+            background: linear-gradient(135deg, #2d5016, #4a7c59);
             color: white;
             padding: 1rem;
             margin: 0;
@@ -263,7 +362,7 @@
         }
 
         .search-btn {
-            background: linear-gradient(135deg, #ff8c00, #ffa500);
+            background: linear-gradient(135deg, #2d5016, #4a7c59);
             color: white;
             border: none;
             padding: 0.75rem 1rem;
@@ -273,7 +372,7 @@
         }
 
         .search-btn:hover {
-            background: linear-gradient(135deg, #e67e00, #ff8c00);
+            background: linear-gradient(135deg, #1e3a0f, #2d5016);
         }
 
         .widget-list {
@@ -306,11 +405,11 @@
             left: -20px;
             opacity: 0;
             transition: all 0.3s ease;
-            color: #ff8c00;
+            color: #2d5016;
         }
 
         .widget-list a:hover {
-            color: #ff8c00;
+            color: #2d5016;
             padding-left: 20px;
             transform: translateX(5px);
         }
@@ -337,7 +436,7 @@
         }
 
         .archive-link:hover {
-            color: #ff8c00;
+            color: #2d5016;
         }
 
         .archive-sub {
@@ -359,7 +458,7 @@
                 grid-template-columns: 1fr;
             }
             
-            .chrysanthemum-hero h1 {
+            .dracaena-hero h1 {
                 font-size: 2.5rem;
             }
             
@@ -373,10 +472,10 @@
 <body>
     <?php include 'header.php'; ?>
 
-    <div class="chrysanthemum-hero">
+    <div class="dracaena-hero">
         <div class="container">
-            <h1>CHRYSANTHEMUM</h1>
-            <p>Kompleks Renang Banda Hilir</p>
+            <h1>DRACAENA</h1>
+            <p>Jabatan Kesihatan Persekitaran</p>
         </div>
     </div>
 
@@ -397,29 +496,77 @@
     </nav>
 
     <div class="main-layout">
-        <main class="main-content">
-            <div class="article-header">
-                <div class="article-date">Tuesday, May 14, 2024</div>
-                <h1 class="article-title">JADUAL AUDIT EKSA SUK 2024</h1>
-                <h2 class="article-subtitle">AUDIT EKSA SUK 2024</h2>
-            </div>
+        <?php
+        // Load articles from JSON file
+        $dataFile = 'dracaena-data.json';
+        $articles = [];
+        
+        if (file_exists($dataFile)) {
+            $articles = json_decode(file_get_contents($dataFile), true) ?: [];
+        }
+        
+        // Only show main content if there are articles
+        if (!empty($articles)) {
+            $hasVisibleArticles = false;
+            foreach ($articles as $article) {
+                if ($article['has_content']) {
+                    $hasVisibleArticles = true;
+                    break;
+                }
+            }
             
-            <div class="article-content">
-                <p>Majlis Bandaraya Melaka Bersejarah (MBMB) akan menghadapi Sesi Pengauditan Pensijilan semula EKSA oleh Jabatan Ketua Menteri Melaka seperti Jadual di bawah:</p>
+            if ($hasVisibleArticles) {
+        ?>
+        <main class="main-content">
+            <?php
+            // Display articles only if they have content
+            foreach ($articles as $article) {
+                if ($article['has_content']) {
+            ?>
+            <div class="news-article">
+                <div class="article-header">
+                    <h1 class="article-title"><?php echo $article['title']; ?></h1>
+                    <?php if (isset($article['subtitle'])): ?>
+                    <h2 class="article-subtitle"><?php echo $article['subtitle']; ?></h2>
+                    <?php endif; ?>
+                    <div class="article-meta">
+                        <span class="article-date">- <?php echo $article['date']; ?></span>
+                        <div class="share-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="jadual-image">
-                    <img src="image/jadualChrysanthemum.jpeg" alt="Jadual Audit EKSA SUK 2024" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="article-content">
+                    <?php if (isset($article['image']) && file_exists($article['image'])): ?>
+                    <div class="article-image">
+                        <img src="<?php echo $article['image']; ?>" alt="<?php echo $article['title']; ?>" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    </div>
+                    <?php endif; ?>
+                    
+                    <div class="article-text">
+                        <p><?php echo $article['content']; ?></p>
+                    </div>
+                    
+                    <div class="article-actions">
+                        <a href="#" class="comment-link"><i class="fas fa-comment"></i> Post a Comment</a>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
                 </div>
-
-                <div class="social-share">
-                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="#"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="#"><i class="fas fa-print"></i> Print</a>
-                    <a href="main.php"><i class="fas fa-home"></i> Home</a>
-                </div>
+            </div>
+            <?php
+                }
+            }
+            ?>
+            
+            <div class="load-more">
+                <a href="#" class="more-posts">MORE POSTS</a>
             </div>
         </main>
+        <?php
+            }
+        }
+        ?>
 
         <aside class="sidebar">
             <div class="sidebar-widget">
@@ -441,42 +588,20 @@
                         <li><a href="#">Carta Organisasi Zon</a></li>
                         <li><a href="#">Carta Perbatuan Zon</a></li>
                         <li><a href="#">Pelan Lantai</a></li>
-                        <li><a href="#">Galeri Aktiviti</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="sidebar-widget">
-                <h3 class="widget-title">Aktiviti Zon</h3>
-                <div class="widget-content">
-                    <ul class="widget-list">
-                        <li><a href="#">AKTIVITI LATIHAN (1)</a></li>
-                        <li><a href="#">AKTIVITI PROMOSI (1)</a></li>
-                    </ul>
-                </div>
-            </div>
 
             <div class="sidebar-widget">
-                <h3 class="widget-title">Jom EKSA</h3>
+                <h3 class="widget-title">Content Management</h3>
                 <div class="widget-content">
-                    <ul class="archive-list">
-                        <li class="archive-item">
-                            <a href="#" class="archive-link">▼ 2024 (1)</a>
-                            <ul class="archive-sub">
-                                <li class="archive-item">
-                                    <a href="#" class="archive-link">▼ May 2024 (1)</a>
-                                    <ul class="archive-sub">
-                                        <li class="archive-item">
-                                            <a href="#" class="archive-link">JADUAL AUDIT EKSA SUK 2024</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="archive-item">
-                            <a href="#" class="archive-link">► 2023 (1)</a>
-                        </li>
-                    </ul>
+                    <a href="dracaena-admin.php" class="btn" style="display: block; text-align: center; text-decoration: none; margin: 0.5rem 0;">
+                        <i class="fas fa-edit"></i> Manage Articles
+                    </a>
+                    <p style="font-size: 0.8rem; color: #6c757d; margin: 0.5rem 0 0 0;">
+                        Add, edit, or remove articles for this zone
+                    </p>
                 </div>
             </div>
         </aside>
